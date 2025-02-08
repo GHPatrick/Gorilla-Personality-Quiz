@@ -1,0 +1,29 @@
+<template>
+    <lightning-card title="Gorilla Personality Quiz">
+        <div class="slds-p-horizontal_medium">
+            <lightning-radio-group 
+                name="personality"
+                label="What best describes you?"
+                options={options}
+                value={selectedValue}
+                onchange={handleChange}>
+            </lightning-radio-group>
+
+            <lightning-button 
+                label="Get Result" 
+                onclick={handleSubmit} 
+                class="slds-m-top_medium">
+            </lightning-button>
+
+            <template if:true={personalityResult}>
+                <div class="slds-m-top_medium">
+                    <p>{personalityResult}</p>
+                    
+                    <p class="slds-m-top_medium">
+                        <a href={quizLink} target="_blank">Click here to learn how you can help endangered gorilla species.</a>
+                    </p>
+                </div>
+            </template>
+        </div>
+    </lightning-card>
+</template>
