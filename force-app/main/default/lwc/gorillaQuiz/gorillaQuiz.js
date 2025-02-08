@@ -19,10 +19,7 @@ export default class GorillaQuiz extends LightningElement {
     handleSubmit() {
         getGorillaPersonality({answer: this.selectedValue})
         .then(result => {
-            this.personalityResult = result;
-        })
-        .catch(error => {
-            this.personalityResult = 'An error occurred.';
-        });
+            this.personalityResult = result;}) 
+
     }
 }
