@@ -35,6 +35,9 @@ This is an interactive web application built using Salesforce Lightning Web Comp
 3. **Deploy LWC**: Deploy the `gorillaQuiz.html` and `gorillaQuiz.js` files as part of your Lightning Web Component (LWC) setup.
 4. **Use in a Lightning Page**: Add the component to any Lightning page or App to allow users to take the quiz.
 
+## Video Demonstration
+https://github.com/user-attachments/assets/a33849eb-3034-4822-9ee9-2d0369a696fe
+
 ## Learn More
 
 Click [here](https://www.worldwildlife.org/species/gorilla) to learn about how you can help protect endangered gorilla species.
