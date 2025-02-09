@@ -1,18 +1,40 @@
-# Salesforce DX Project: Next Steps
+# Gorilla Personality Quiz
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+This is an interactive web application built using Salesforce Lightning Web Components (LWC) and Apex. It presents a fun personality quiz based on user responses, providing a personalized "Gorilla Personality" result. After completing the quiz, users are provided with a link to learn more about how they can help endangered gorilla species.
 
-## How Do You Plan to Deploy Your Changes?
+## Features
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+- **Interactive Personality Quiz**: Users select one of three options that best describes their personality: "Friendly," "Shy," or "Adventurous."
+- **Personalized Results**: Based on the selection, users receive a description of their "Gorilla Personality."
+- **Learn More**: After the result, a link to the World Wildlife Fund (WWF) page is provided, encouraging users to learn about endangered gorillas and ways to help.
 
-## Configure Your Salesforce DX Project
+## Technologies Used
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+- **Salesforce** (Apex and Lightning Web Components)
+- **JavaScript**
+- **HTML (LWC)**
 
-## Read All About It
+## How It Works
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+### 1. **User Interaction**
+- The user is presented with a radio button group where they can select one of the three personality traits: "Friendly," "Shy," or "Adventurous."
+- After making a selection, the user clicks a "Get Result" button to receive their personality outcome.
+
+### 2. **Backend Logic**
+- The quiz uses an Apex class, `GorillaPersonalityQuizController`, which processes the user’s answer and returns a corresponding personality result. 
+- The result is then displayed on the screen.
+
+### 3. **Displaying the Result**
+- Once the result is retrieved, a description of the user's "Gorilla Personality" is shown on the screen.
+- Additionally, a link to the World Wildlife Fund's page about gorillas is displayed, encouraging users to learn more about how they can contribute to saving endangered gorilla species.
+
+## How to Deploy
+
+1. **Salesforce Org**: This application is designed to be used within a Salesforce organization (Org).
+2. **Create Apex Class**: Deploy the `GorillaPersonalityQuizController` Apex class to your Salesforce Org.
+3. **Deploy LWC**: Deploy the `gorillaQuiz.html` and `gorillaQuiz.js` files as part of your Lightning Web Component (LWC) setup.
+4. **Use in a Lightning Page**: Add the component to any Lightning page or App to allow users to take the quiz.
+
+## Learn More
+
+Click [here](https://www.worldwildlife.org/species/gorilla) to learn about how you can help protect endangered gorilla species.
